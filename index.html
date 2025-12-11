@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Dash Runner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="frame">
+    <header class="hud">
+      <div class="brand">
+        <div class="pill">New</div>
+        <div>
+          <h1>Dash Runner</h1>
+          <p>إصدار مستوحى من Geometry Dash بلمسة عصرية.</p>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat"><span>النتيجة</span><strong id="score">0</strong></div>
+        <div class="stat"><span>أفضل نتيجة</span><strong id="best">0</strong></div>
+      </div>
+    </header>
+
+    <main class="canvas-wrap">
+      <canvas id="game" aria-label="لعبة قفز" role="img"></canvas>
+      <div class="overlay" id="overlay">
+        <h2>اضغط أو المس للّقفز</h2>
+        <p>Space / ⌘ ⌥ / لمس الشاشة للقفز وتفادي العقبات</p>
+        <div class="chips">
+          <span>سرعة متزايدة</span>
+          <span>قوّة قفز مرنة</span>
+          <span>يدعم الموبايل والكمبيوتر</span>
+        </div>
+      </div>
+    </main>
+
+    <footer class="controls">
+      <button id="playPause">ابدأ اللعب</button>
+      <button id="restart">إعادة تشغيل</button>
+      <div class="note">حافظ على إيقاع القفز وثبّت توقيتك. اللعبة تتجاوب مع حجم الشاشة واللمس.</div>
+    </footer>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
